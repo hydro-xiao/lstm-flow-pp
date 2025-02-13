@@ -1,0 +1,28 @@
+######## input files directories
+[INPUT]
+basin_listf     = ./data/sample.inputs/b23.list.txt
+dynamic_dir     = ./data/sample.inputs/dynamic/            ## *.csv
+static_inputs   = ./data/sample.inputs/static_attri.txt
+savemodel_dir   = ./data/output.saved/model.train.1981-2017/ 
+output_dir      = ./data/output.saved/flows/
+figure_dir      = ./data/output.saved/figs/
+make_plot       = 1   ## 1 (create figs) or 0 (no figs)
+
+######## experiment-specific parameters
+[TEST_PARA]
+Ttrain          = 19801001,20170930  # Training period
+Tvalid          = 20171001,20200930  # Valid period
+Tpredc          = 20171001,20200930  # Forecast period
+dyn_var_list    = lw,sw,press,sph,prec,tair,uw,vw,swe,sm,Qsim ## variables used as predictors
+target_var      = FNF
+log_var_list    = FNF,prec,Qsim,p_mean  ## p and flow need log-transform
+stc_var_list    = elev,sand,slope,size,p_mean
+
+######### hyper-parameters for lstm
+[HYPER_PARA]
+nepoch          = 350
+batch_size      = 23
+rho             = 48    
+hidden_size     = 64    
+EPOCH_save      = 5     # save model for every save step
+EPOCH_use       = 350  
