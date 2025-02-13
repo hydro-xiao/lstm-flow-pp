@@ -1,0 +1,24 @@
+num,id,fname
+1,PSH,Pit River
+2,MSS,McCloud River
+3,SDT,Sacramento River
+4,TNL,Trinity River
+5,SBB,Sacramento R
+6,FTO,Feather River
+7,YRS,Yuba River
+8,AMF,American River
+9,TRF,Truckee River
+10,WFC,West Fork Carson
+11,EFC,East Fork Carson River
+12,CSN,Cosumnes River
+13,MKM,Mokelumne River
+14,WWR,West Walker
+15,EWR,East Walker
+16,SNS,Stanislaus River
+17,TLG,Tuolumne River
+18,MRC,Merced River
+19,SJF,San Joaquin River
+20,KGF,Kings River
+21,KWT,Kaweah River
+22,SCC,Tule River
+23,KRI,Kern River

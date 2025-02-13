@@ -1,0 +1,27 @@
+############################
+"b23.list.txt" contains basin information
+
+############################
+dynamic variables:
+    lw: longwave radiation (w/m2)
+    sw: shortwave radiation (w/m2)
+    press: air pressure (Pa)
+    sph: specific humidity in % (multiplied by 100)
+    prec: precipitation (mm/day)
+    tair: air temperature (K)
+    uw: u-direction wind speed (m/s)
+    vw: v-direction wind speed (m/s)
+    swe: snow water equivalent (mm)
+    sm: soil moisture, the dimensionless ratio of water volume (m3) to soil volume (m3)
+    Qsim: simulated flow (mm/day)
+    FNF: full natural flow (mm/day)
+
+############################
+stable attributes:
+id:     numerical index of the basins
+elev:   elevlation (m)
+sand:   sand content
+slope:  basin slope
+size:   basin area (m2)
+p_mean: mean precipitation for Oct-1980 to Sep-2020 (mm/day)
+
